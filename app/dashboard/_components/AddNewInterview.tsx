@@ -21,7 +21,7 @@ import { chatSession } from '@/utils/GeminiAiModel';
 import { LoaderCircle } from 'lucide-react';
 import { useUser } from '@clerk/nextjs';
 import moment from 'moment';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 
 const AddNewInterview = () => {
 
