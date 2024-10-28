@@ -6,7 +6,7 @@ import { MockInterview } from '@/utils/schema'
 import Webcam from "react-webcam";
 import { Ghost, Lightbulb, WebcamIcon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-
+import Link from 'next/link';
 
 const Interview = ({params}:{params:{interviewId:string}}) => {
 
@@ -58,7 +58,7 @@ const Interview = ({params}:{params:{interviewId:string}}) => {
         </div>
 
         <div className='flex justify-end items-end mt-3'>
-          <Button>Start</Button>
+          <Link href={'/dashboard/interview/'+params.interviewId+'/start'}><Button>Start</Button></Link>
         </div>
 
     </div>
