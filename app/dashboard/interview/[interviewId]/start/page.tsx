@@ -5,7 +5,7 @@ import { MockInterview } from '@/utils/schema';
 import { eq } from 'drizzle-orm';
 import React, { useEffect, useState } from 'react'
 import QuestionsSection from './_components/QuestionsSection';
-import { stringifyError } from 'next/dist/shared/lib/utils';
+import Link from 'next/link'
 import RecordAnswerSection from './_components/RecordAnswerSection';
 import { Button } from '@/components/ui/button';
 
@@ -49,7 +49,10 @@ const StartInterview = ({params}:{params:{interviewId:string}}) => {
           {activeQuestionIndex != mock_interview_questions?.length-1 && 
           <Button onClick={()=>setActiveQuestionIndex(activeQuestionIndex+1)}>Next Question</Button>}
           {activeQuestionIndex == mock_interview_questions?.length-1 && 
-          <Button>End</Button>}
+          <Link href={'/dashboard/interview/'+interviewData?.mockId+"/feedback"}>
+            <Button>End</Button>
+          </Link>
+          }
         </div>
     </div>
   )
