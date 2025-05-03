@@ -29,17 +29,21 @@ AceAI is a full-stack AI-powered mock interview platform built to help users pra
 
 ## 📦 Getting Started
 
-### 1. Clone the repository
-git clone https://github.com/Sumit00s/aceai.git
+## 📦 Project Setup
+
+To get started with AceAI locally, follow these quick steps:
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/yourusername/aceai.git
 cd aceai
+
+# 2. Install dependencies
 npm install
 
-3. Set up environment variables
-Create a .env.local file in the root of the project and add the following:
+# 3. Create and configure your .env.local file
+# Add the following environment variables:
 
-env
-Copy
-Edit
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
 CLERK_SECRET_KEY=
 
@@ -50,4 +54,8 @@ NEXT_PUBLIC_DATABASE_URL=
 
 NEXT_PUBLIC_GEMINI_API_KEY=
 
+# 4. Push your database schema using Drizzle ORM
+npx drizzle-kit push
+
+# 5. Start the development server
 npm run dev
