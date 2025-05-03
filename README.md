@@ -30,7 +30,7 @@ AceAI is a full-stack AI-powered mock interview platform built to help users pra
 ## 📦 Getting Started
 
 ### 1. Clone the repository
-git clone https://github.com/yourusername/aceai.git
+git clone https://github.com/Sumit00s/aceai.git
 cd aceai
 npm install
 
