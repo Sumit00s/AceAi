@@ -35,7 +35,7 @@ To get started with AceAI locally, follow these quick steps:
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/yourusername/aceai.git
+git clone https://github.com/Sumit00s/aceai.git
 cd aceai
 
 # 2. Install dependencies
